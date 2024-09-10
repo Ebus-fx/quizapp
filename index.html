@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Quiz app</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="loader" class="loader"></div>
+        <div class="bbb">
+            <div id="audio"></div>
+            <button class="btn">Start Game</button>
+        </div>
+
+
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <div class="instruct">
+            <div class="mediumm">
+                <div class="inside">
+                    <div class="wof">
+                        <h1>RULES OF THE QUIZ</h1>
+                        <p>1. Once you select your answer, you can't reselect.</p>
+                        <p>2. You can't select any option once time goes off.</p>
+                        <p>3. You cant't exit from the Quiz while you're playing.</p>
+                        <p>4. You'll get cash on the basis of your correct answer.</p>
+                        <div>
+                            <button class="continue">continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="content-cont">
+        <input value="500" readonly id="cash-count">
+            <div id="timer">Time Count <span id="countdown">119</span> S</div>
+            <div class="bbt">
+                <div class="quest-div" id="quest-div1">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">1/7</p>
+                        </div>
+
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> What has a head, but never wears a hat?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans" value="1">A. A tree</button>
+                            <button class="ans" value="2">B. A mountain
+                            </button>
+                            <button class="ans" value="3">B. A river</button>
+                            <button class="ans" value="4">D. A person
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next1" value="1" class="butt">>>>>></button>
+                    </div>
+
+                </div>
+
+                <div class="quest-div cont" id="quest-div2">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">2/7</p>
+                        </div>
+
+                     
+
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> I am always coming but never arrives. what am I?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans2" value="1">A. Tomorrow</button>
+                            <button class="ans2" value="2">B. Yesterday
+                            </button>
+                            <button class="ans2" value="3">B. Day</button>
+                            <button class="ans2" value="4">D. Today
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next2" value="2" class="butt">>>>>></button>
+                    </div>
+
+                </div>
+
+                <div class="quest-div cont" id="quest-div3">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">3/7</p>
+                        </div>
+
+                   
+
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> What can you catch, but not throw ?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans3" value="1">A. stray</button>
+                            <button class="ans3" value="2">B. Cold
+                            </button>
+                            <button class="ans3" value="3">B. stick</button>
+                            <button class="ans3" value="4">D. heart
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next3" value="3" class="butt">>>>>></button>
+                    </div>
+
+
+                </div>
+                <div class="quest-div cont" id="quest-div4">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">4/7</p>
+                        </div>
+
+                      
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> What is always moving, yet never moves?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans4" value="1">A. A shadow</button>
+                            <button class="ans4" value="2">B. A light
+                            </button>
+                            <button class="ans4" value="3">B. A sound</button>
+                            <button class="ans4" value="4">D. A wave
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next4" value="4" class="butt">>>>>></button>
+                    </div>
+
+
+                </div>
+                <div class="quest-div cont" id="quest-div5">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">5/7</p>
+                        </div>
+
+                       
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> e start with my name and end my name. What am I?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans5" value="1">A. An egg</button>
+                            <button class="ans5" value="2">B. An envelope
+                            </button>
+                            <button class="ans5" value="3">B. An earth</button>
+                            <button class="ans5" value="4">D. An elephant
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next5" value="5" class="butt">>>>>></button>
+                    </div>
+
+
+                </div>
+                <div class="quest-div cont" id="quest-div6">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">6/7</p>
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> i have thumbs but don't have a hand. What am I?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans6" value="1">A. A glove</button>
+                            <button class="ans6" value="2">B. A shoe
+                            </button>
+                            <button class="ans6" value="3">B. A foot</button>
+                            <button class="ans6" value="4">D. A sock
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next6" value="6" class="butt">>>>>></button>
+                    </div>
+
+
+                </div>
+                <div class="quest-div cont" id="quest-div7">
+                    <div class="flex">
+                        <div id="count">
+                            <p id="p1">7/7</p>
+                        </div>
+
+                       
+                    </div>
+                    <div class="opt">
+                        <div class="label" id="quest1" for="question">
+                            <p><span id="yel">Riddle:</span> What can you break, even if you nevertouch it. What am I?
+                            </p>
+                        </div>
+                        <div class="flex-qdiv" id="opt1">
+                            <button class="ans7" value="1">A. A heart</button>
+                            <button class="ans7" value="2">B. A mirror
+                            </button>
+                            <button class="ans7" value="3">B. A chain</button>
+                            <button class="ans7" value="4">D. A promise
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next">
+                        <button id="next7" value="7" class="butt">>>>>></button>
+                    </div>
+
+
+                </div>
+            </div>
+            
+
+    </div>
+
+    
+        <audio id="background-music" loop>
+            <source src="audio/Alan_Walker_The_Walkers_-_Unity.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="correct-sound">
+            <source src="audio/correct-6033.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="incorrect-sound">
+            <source src="audio/wrong-47985.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+
+
+    <div class="start-div" id="end">
+        <p class="himg"><img src="img/real gif 1.gif"></img></p>
+        <p class="pp1">olodo try again !!!</p>
+        <p class="pp2">time out</p>
+        <!-- <button id="endbut">Restart</button> -->
+        
+        <a href="index.html"> <button id="endbut" value="6" class="butt2">Try again</button></a>
+    </div>
+    </div>
+
+</body>
+
+</html>
