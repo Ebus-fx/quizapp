@@ -100,7 +100,7 @@ function value() {
 }
 
 function startTimer() {
-    let timeLeft = 120;
+    let timeLeft = 5;
     let timerInterval;
 
     timerInterval = setInterval(function () {
@@ -109,6 +109,7 @@ function startTimer() {
             $('#countdown').text(timeLeft);
         } else {
             $(".content-cont").hide();
+            $(".wrapper").hide();
             $("#end").show();
 
 
